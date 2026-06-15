@@ -70,6 +70,11 @@
   .badge-dn { background: var(--blue-bg); color: var(--blue); }
   .issue-card { border-radius: var(--radius-sm); padding: 10px 13px; margin-bottom: 8px; border-left: 3px solid; background: var(--bg2); }
   .issue-title { font-size: 13px; font-weight: 500; }
+  .issue-title a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--border2); }
+  .issue-title a:hover { border-bottom-color: var(--text); }
+  .issue-links { display: flex; gap: 10px; margin-top: 5px; }
+  .issue-links a { font-size: 11px; color: var(--text2); text-decoration: none; border-bottom: 1px dashed var(--border2); }
+  .issue-links a:hover { color: var(--text); }
   .issue-body { font-size: 11px; color: var(--text2); margin-top: 3px; line-height: 1.5; }
   .sector-table { width: 100%; border-collapse: collapse; font-size: 12px; }
   .sector-table th { text-align: left; padding: 7px 10px; color: var(--text2); font-weight: 500; border-bottom: 0.5px solid var(--border); font-size: 11px; }
@@ -164,18 +169,33 @@
       <div class="issue-card" style="border-left-color:var(--green);">
         <div class="issue-title">🟢 미·이란 평화협정 6/14 서명 확정</div>
         <div class="issue-body">호르무즈 재개방 합의 · WTI -5.59% · 테일리스크 해소 → 소비재·물류·항공 구조적 긍정</div>
+        <div class="issue-links">
+          <a href="https://www.cnbc.com/2026/06/14/us-iran-war-peace-deal.html" target="_blank">📰 CNBC 원문</a>
+          <a href="https://www.nbcnews.com/news/us-news/deal-reached-united-states-iran-war-rcna350039" target="_blank">📰 NBC News</a>
+          <a href="https://app.notion.com/p/3802732a5a1f816c9de4d00a143a3ccf" target="_blank">📓 매매일지 분석</a>
+        </div>
       </div>
       <div class="issue-card" style="border-left-color:var(--green);">
         <div class="issue-title">🟢 SpaceX 나스닥 상장 +19%</div>
         <div class="issue-body">기업가치 2조달러 · 나스닥 선물 강세 → QQQ·나스닥100 ETF 보유 근거 확인</div>
+        <div class="issue-links">
+          <a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-12-2026" target="_blank">📰 TheStreet 원문</a>
+          <a href="https://app.notion.com/p/3802732a5a1f816c9de4d00a143a3ccf" target="_blank">📓 매매일지 분석</a>
+        </div>
       </div>
       <div class="issue-card" style="border-left-color:var(--red);">
         <div class="issue-title">🔴 미국 5월 CPI 3년 만에 최대 ▲</div>
         <div class="issue-body">금리 인하 2027년까지 지연 · 나스닥 30% 상한선 엄수</div>
+        <div class="issue-links">
+          <a href="https://app.notion.com/p/3802732a5a1f816c9de4d00a143a3ccf" target="_blank">📓 매매일지 분석</a>
+        </div>
       </div>
       <div class="issue-card" style="border-left-color:var(--amber);">
         <div class="issue-title">🟡 독일 기술적 경기침체 경고</div>
         <div class="issue-body">유럽 ETF 0% 유지 · 원달러 고점 → 1,480원 이하 시 재검토</div>
+        <div class="issue-links">
+          <a href="https://app.notion.com/p/3802732a5a1f816c9de4d00a143a3ccf" target="_blank">📓 매매일지 분석</a>
+        </div>
       </div>
 
       <div class="section-label">포트폴리오 배분</div>
