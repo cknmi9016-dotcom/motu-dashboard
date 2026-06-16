@@ -148,30 +148,29 @@ function setToken(t){ localStorage.setItem('kiori_gh_token',t); }
 
 /*DATA_START*/
 const DATA = {
-  "date": "2026.06.15 (월)",
-  "phase": "🟢 리스크온 강화 — 키오리 모투",
-  "phaseSub": "미·이란 협정 확정 · 나스닥 선물 급등 · 원달러 1,519원 ⚠️ 환율 주의",
-  "fxAlert": "⚠️ <strong>환율 경고</strong> — 원달러 1,519원 역대 고점권. SPY·QQQ 신규 매수 시 환차손 리스크 존재. 원달러 1,480원 이하 시 재검토 권고.",
-  "portNote": "💡 원달러 고점 → 국내(KODEX 200) 비중 ↑, 달러자산(QQQ·SPY) 비중 ↓ · 현금 30% 눌림목 대기",
+  "date": "2026.06.16 (월)",
+  "phase": "🟢 종전 모멘텀 강세 — 키오리 모투",
+  "phaseSub": "중동 종전 MOU 기대 · 코스피 +5.2% 폭등 · 외국인 2조 순매수 · 원달러 1,521원",
+  "fxAlert": "⚠️ <strong>환율 주의</strong> — 원달러 1,521원 고점권 유지. 단, 종전 기대감으로 원화 강세 방향 전환 중. SPY·QQQ 신규 진입 소량 허용, 대규모 달러 자산 매수는 1,480원 이하 확인 후.",
+  "portNote": "📊 현재 보유: KODEX 200 27.3% / 코스닥150 2.2% / 현금 70.5% — 오늘 권장: KODEX 200 +5,000만 추가 · SPY 3,000만 신규 · 나머지 현금 유보",
   "etfs": [
-    {"name":"KODEX 200","index":"코스피200 · 원화","price":"—","chg":"▲ 예상 강세","chgDir":"up","badge":"badge-hold","badgeText":"눌림목 대기","opinion":"협정 확정·리스크온. 삼성·하이닉스 비중 높아 반도체 수혜. 8,000~8,100 눌림목 시 1차 진입 유효."},
-    {"name":"KODEX 코스닥150","index":"코스닥150 · 원화","price":"—","chg":"— 변동성 주의","chgDir":"neutral","badge":"badge-wait","badgeText":"관망","opinion":"4종목 중 변동성 최고. 위험선호 장세이나 급등 후 되돌림 위험. 외국인 수급 전환 확인 후 진입."},
-    {"name":"SPY","index":"S&P500 · 달러","price":"~$7,431","chg":"▲ 0.50% (전일)","chgDir":"up","badge":"badge-hold","badgeText":"유지 · 신규 자제","opinion":"미국 장세 긍정이나 원달러 고점으로 신규 매수 자제. 기존 보유 시 유지. 환율 개선 시 비중 확대."},
-    {"name":"QQQ","index":"나스닥100 · 달러","price":"~$25,888","chg":"▲ 선물 급등 중","chgDir":"up","badge":"badge-hold","badgeText":"유지 · 추격 금지","opinion":"SpaceX·협정 모멘텀. 선물 이미 갭업 → 오늘 추격 매수 비권고. 25,000~25,500 눌림목 시 분할 진입."}
+    {"name":"KODEX 200","index":"코스피200 · 원화","price":"136,290원","chg":"▼ -0.94% (평단 137,591)","chgDir":"dn","badge":"badge-buy","badgeText":"추가 매수","opinion":"종전 MOU 핵심 수혜. 외국인 2조 순매수 유입. 현재 -0.94% 손실 중이나 오늘 급등 모멘텀 지속 시 손익분기 돌파. 5,000만 추가 매수로 평단 낮추기 권장."},
+    {"name":"KODEX 코스닥150","index":"코스닥150 · 원화","price":"18,295원","chg":"▲ +0.75% (평단 18,158)","chgDir":"up","badge":"badge-hold","badgeText":"유지","opinion":"+0.75% 소폭 흑자. 코스피 대비 상승폭 제한적. 비중 2.2%로 소량 — 현재 유지, 추가 매수보다 KODEX 200에 집중."},
+    {"name":"SPY","index":"S&P500 · 달러","price":"~$751","chg":"▲ +1.65% (전일 종가)","chgDir":"up","badge":"badge-buy","badgeText":"소량 진입","opinion":"미국 강세 + 포트 다변화 목적. 원달러 강세 방향으로 전환 중이라 소량(3,000만) 진입 타이밍. QQQ보다 SpaceX 리밸런싱 영향 적음."},
+    {"name":"QQQ","index":"나스닥100 · 달러","price":"~$721","chg":"▲ +3.07% (전일 종가)","chgDir":"up","badge":"badge-wait","badgeText":"대기","opinion":"SpaceX 나스닥 편입 리밸런싱 변동성 구간. 기존 빅테크(엔비디아·애플) 매도 압력. 오늘 SPCX 옵션 첫 거래 — 이번 주 지켜본 후 진입."}
   ],
   "issues": [
-    {"color":"green","title":"🟢 미·이란 협정 6/14 서명 확정","tags":"KODEX 200 ↑, 코스닥150 ↑, QQQ ↑, SPY ↑","impact":"전 지수 리스크온. WTI -5.59% → 인플레 완화 기대 → 4종목 전체 긍정. 단, 이미 선반영 — 갭업 추격 금지.","links":"📰 CNBC|https://www.cnbc.com/2026/06/14/us-iran-war-peace-deal.html\n📓 매매일지|https://app.notion.com/p/3802732a5a1f816c9de4d00a143a3ccf"},
-    {"color":"green","title":"🟢 SpaceX 나스닥 상장 +19%","tags":"QQQ ↑↑, SPY ↑","impact":"나스닥 모멘텀 강화. QQQ 보유 근거 확인. 그러나 오늘 선물 이미 갭업 — 25,000~25,500 눌림목 대기.","links":"📰 TheStreet|https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-12-2026"},
-    {"color":"red","title":"🔴 미국 5월 CPI 3년 최대 상승","tags":"QQQ ↓↓, SPY ↓","impact":"금리 인하 2027년까지 지연 → QQQ 고밸류 압박 지속. 나스닥 급등 후 급락 패턴 반복 위험. QQQ 비중 30% 이내 유지.","links":""},
-    {"color":"amber","title":"🟡 원달러 1,519원 — 역대 고점","tags":"SPY 환차손, QQQ 환차손, KODEX 200 중립","impact":"지수 +1% 상승해도 환율 되돌림 시 원화 손실 가능. 1,480원 이하 전까지 SPY·QQQ 신규 매수 자제. 국내 ETF 상대적으로 유리.","links":""},
-    {"color":"blue","title":"🔵 반도체 강세 (INTC▲6.5% AMD▲4.7%)","tags":"KODEX 200 ↑, QQQ ↑","impact":"KODEX 200 내 삼성전자·SK하이닉스 비중 수혜. QQQ도 반도체 편입 비중 큼. 반도체 사이클 상승 지속 시 두 ETF 모두 긍정.","links":""}
+    {"color":"green","title":"🟢 중동 종전 MOU 기대 — 코스피 +5.2% 폭등","tags":"KODEX 200 ↑↑, 코스닥150 ↑, SPY ↑, QQQ ↑","impact":"미·이란 종전 MOU 임박 발표로 글로벌 위험선호 급등. 외국인 2거래일 연속 2조 순매수. WTI 유가 하락 → 인플레 완화 기대. 단, 하루 +5.2% 급등 — 이미 호재 상당 부분 반영. 추격 전액 투입 금지.","links":""},
+    {"color":"red","title":"🚀 SpaceX IPO QQQ 리밸런싱 변동성","tags":"QQQ ↓단기, SPY 중립","impact":"SpaceX 나스닥 편입으로 QQQ가 기존 보유 빅테크(엔비디아·애플·MS) 강제 매도. 오늘(6/16) SPCX 옵션 거래 개시 → 딜러 헤지 물량 추가. QQQ 단기 변동성 확대 구간. 이번 주 리밸런싱 마무리 후 진입 유리.","links":"📰 SpotGamma 분석|https://spotgamma.com/spacex-ipo-index-changes-spotgamma/"},
+    {"color":"amber","title":"🟡 원달러 1,521원 — 강세 전환 중","tags":"SPY 환차손↓, QQQ 환차손↓, KODEX 200 중립","impact":"종전 기대감으로 원화 강세 방향 전환. 1,521 → 1,480 이하로 떨어질수록 SPY·QQQ 원화 환산 수익 개선. 현재 소량 달러 자산 진입은 허용, 대규모는 1,480 이하 확인 후.","links":"📰 이투데이|https://www.etoday.co.kr/news/view/2593896"},
+    {"color":"blue","title":"🔵 현금 70.5% — 총알 풍부, 조급함 경계","tags":"전 종목 분할 매수 기회","impact":"3억 5,274만원 현금 보유 중. 오늘 급등장에서 전액 투입 충동 주의. 권장: KODEX 200 5,000만 + SPY 3,000만으로 약 8,000만만 투입하고 나머지 2억 7천만 유보. 2차 매수는 조정 시.","links":""}
   ],
   "portfolio": [
-    {"name":"KODEX 200","weight":"30%","amount":"1.5억","badge":"badge-hold","badgeText":"안정"},
-    {"name":"코스닥150","weight":"10%","amount":"0.5억","badge":"badge-wait","badgeText":"공격·소량"},
-    {"name":"QQQ","weight":"25%","amount":"1.25억","badge":"badge-hold","badgeText":"공격·달러"},
-    {"name":"SPY","weight":"5%","amount":"0.25억","badge":"badge-hold","badgeText":"안정·달러"},
-    {"name":"현금","weight":"30%","amount":"1.5억","badge":"badge-cash","badgeText":"실탄 유보"}
+    {"name":"KODEX 200","weight":"27.3%","amount":"1억 3,629만","badge":"badge-hold","badgeText":"보유 · 추가 예정"},
+    {"name":"코스닥150","weight":"2.2%","amount":"1,097만","badge":"badge-hold","badgeText":"보유 · 유지"},
+    {"name":"SPY","weight":"0%","amount":"0원","badge":"badge-buy","badgeText":"신규 진입 권장"},
+    {"name":"QQQ","weight":"0%","amount":"0원","badge":"badge-wait","badgeText":"대기"},
+    {"name":"현금","weight":"70.5%","amount":"~3억 5,274만","badge":"badge-cash","badgeText":"실탄 유보"}
   ]
 };
 /*DATA_END*/
@@ -502,7 +501,34 @@ async function saveToGitHub(){
     const sha=getJson.sha;
     const cur=fromB64(getJson.content);
 
-    const newBlock=`/*DATA_START*/\nconst DATA = ${JSON.stringify(DATA,null,2)};\n/*DATA_END*/`;
+    const newBlock=`/*DATA_START*/
+const DATA = {
+  "date": "2026.06.16 (월)",
+  "phase": "🟢 종전 모멘텀 강세 — 키오리 모투",
+  "phaseSub": "중동 종전 MOU 기대 · 코스피 +5.2% 폭등 · 외국인 2조 순매수 · 원달러 1,521원",
+  "fxAlert": "⚠️ <strong>환율 주의</strong> — 원달러 1,521원 고점권 유지. 단, 종전 기대감으로 원화 강세 방향 전환 중. SPY·QQQ 신규 진입 소량 허용, 대규모 달러 자산 매수는 1,480원 이하 확인 후.",
+  "portNote": "📊 현재 보유: KODEX 200 27.3% / 코스닥150 2.2% / 현금 70.5% — 오늘 권장: KODEX 200 +5,000만 추가 · SPY 3,000만 신규 · 나머지 현금 유보",
+  "etfs": [
+    {"name":"KODEX 200","index":"코스피200 · 원화","price":"136,290원","chg":"▼ -0.94% (평단 137,591)","chgDir":"dn","badge":"badge-buy","badgeText":"추가 매수","opinion":"종전 MOU 핵심 수혜. 외국인 2조 순매수 유입. 현재 -0.94% 손실 중이나 오늘 급등 모멘텀 지속 시 손익분기 돌파. 5,000만 추가 매수로 평단 낮추기 권장."},
+    {"name":"KODEX 코스닥150","index":"코스닥150 · 원화","price":"18,295원","chg":"▲ +0.75% (평단 18,158)","chgDir":"up","badge":"badge-hold","badgeText":"유지","opinion":"+0.75% 소폭 흑자. 코스피 대비 상승폭 제한적. 비중 2.2%로 소량 — 현재 유지, 추가 매수보다 KODEX 200에 집중."},
+    {"name":"SPY","index":"S&P500 · 달러","price":"~$751","chg":"▲ +1.65% (전일 종가)","chgDir":"up","badge":"badge-buy","badgeText":"소량 진입","opinion":"미국 강세 + 포트 다변화 목적. 원달러 강세 방향으로 전환 중이라 소량(3,000만) 진입 타이밍. QQQ보다 SpaceX 리밸런싱 영향 적음."},
+    {"name":"QQQ","index":"나스닥100 · 달러","price":"~$721","chg":"▲ +3.07% (전일 종가)","chgDir":"up","badge":"badge-wait","badgeText":"대기","opinion":"SpaceX 나스닥 편입 리밸런싱 변동성 구간. 기존 빅테크(엔비디아·애플) 매도 압력. 오늘 SPCX 옵션 첫 거래 — 이번 주 지켜본 후 진입."}
+  ],
+  "issues": [
+    {"color":"green","title":"🟢 중동 종전 MOU 기대 — 코스피 +5.2% 폭등","tags":"KODEX 200 ↑↑, 코스닥150 ↑, SPY ↑, QQQ ↑","impact":"미·이란 종전 MOU 임박 발표로 글로벌 위험선호 급등. 외국인 2거래일 연속 2조 순매수. WTI 유가 하락 → 인플레 완화 기대. 단, 하루 +5.2% 급등 — 이미 호재 상당 부분 반영. 추격 전액 투입 금지.","links":""},
+    {"color":"red","title":"🚀 SpaceX IPO QQQ 리밸런싱 변동성","tags":"QQQ ↓단기, SPY 중립","impact":"SpaceX 나스닥 편입으로 QQQ가 기존 보유 빅테크(엔비디아·애플·MS) 강제 매도. 오늘(6/16) SPCX 옵션 거래 개시 → 딜러 헤지 물량 추가. QQQ 단기 변동성 확대 구간. 이번 주 리밸런싱 마무리 후 진입 유리.","links":"📰 SpotGamma 분석|https://spotgamma.com/spacex-ipo-index-changes-spotgamma/"},
+    {"color":"amber","title":"🟡 원달러 1,521원 — 강세 전환 중","tags":"SPY 환차손↓, QQQ 환차손↓, KODEX 200 중립","impact":"종전 기대감으로 원화 강세 방향 전환. 1,521 → 1,480 이하로 떨어질수록 SPY·QQQ 원화 환산 수익 개선. 현재 소량 달러 자산 진입은 허용, 대규모는 1,480 이하 확인 후.","links":"📰 이투데이|https://www.etoday.co.kr/news/view/2593896"},
+    {"color":"blue","title":"🔵 현금 70.5% — 총알 풍부, 조급함 경계","tags":"전 종목 분할 매수 기회","impact":"3억 5,274만원 현금 보유 중. 오늘 급등장에서 전액 투입 충동 주의. 권장: KODEX 200 5,000만 + SPY 3,000만으로 약 8,000만만 투입하고 나머지 2억 7천만 유보. 2차 매수는 조정 시.","links":""}
+  ],
+  "portfolio": [
+    {"name":"KODEX 200","weight":"27.3%","amount":"1억 3,629만","badge":"badge-hold","badgeText":"보유 · 추가 예정"},
+    {"name":"코스닥150","weight":"2.2%","amount":"1,097만","badge":"badge-hold","badgeText":"보유 · 유지"},
+    {"name":"SPY","weight":"0%","amount":"0원","badge":"badge-buy","badgeText":"신규 진입 권장"},
+    {"name":"QQQ","weight":"0%","amount":"0원","badge":"badge-wait","badgeText":"대기"},
+    {"name":"현금","weight":"70.5%","amount":"~3억 5,274만","badge":"badge-cash","badgeText":"실탄 유보"}
+  ]
+};
+/*DATA_END*/`;
     const newHtml=cur.replace(/\/\*DATA_START\*\/[\s\S]*?\/\*DATA_END\*\//,newBlock);
     if(newHtml===cur) throw new Error('DATA 블록을 찾지 못했습니다');
 
